@@ -1,0 +1,180 @@
+{% extends "bootstrap/base.html" %}
+
+{% block title %}
+Dashboard
+{% endblock %}
+
+{% block styles %}
+{{super()}}
+<link rel="stylesheet" href="{{url_for('.static', filename='dashboard.css')}}">
+{% endblock %}
+
+{% block content %}
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Ambient</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="{{ url_for('logout') }}">Log Out</a></li>
+          </ul>
+          <form class="navbar-form navbar-right">
+            <input type="text" class="form-control" placeholder="Search...">
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="#">Analytics</a></li>
+            <li><a href="#">Export</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="">Mortgage</a></li>
+            <li><a href="">Refinance</a></li>
+            <li><a href="">Home Equity</a></li>
+            <li><a href="">Car Loan</a></li>
+            <li><a href="">Auto Loan</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="">Personal Loan</a></li>
+            <li><a href="">BUsiness Loan</a></li>
+            <li><a href="">Student Loan</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">Welcome, {{ name }}</h1>
+
+          <div class="row placeholders">
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h4>Mortgage</h4>
+              <span class="text-muted">Calculate</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h4>Business</h4>
+              <span class="text-muted">Calculate</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h4>Student</h4>
+              <span class="text-muted">Calculate</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h4>Others</h4>
+              <span class="text-muted">Calculate</span>
+            </div>
+          </div>
+
+          <h2 class="sub-header">Latest Record loan Calculations</h2>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Interest</th>
+                  <th>Principal</th>
+                  <th>Balance</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Sep, 2020</td>
+                  <td>$21,875</td>
+                  <td>$5,735</td>
+                  <td>$4,994,265</td>
+                </tr>
+                <tr>
+                  <td>Oct, 2020</td>
+                  <td>$21,850</td>
+                  <td>$5,760</td>
+                  <td>$4,988,505</td>
+                </tr>
+                <tr>
+                  <td>Nov, 2020</td>
+                  <td>$21,825</td>
+                  <td>$5,785</td>
+                  <td>$4,982,719</td>
+                </tr>
+                <tr>
+                  <td>Dec, 2020</td>
+                  <td>$21,799</td>
+                  <td>$5,811</td>
+                  <td>$4,976,908</td>
+                </tr>
+                <tr>
+                  <td>Jan, 2021</td>
+                  <td>$21,774</td>
+                  <td>$5,836</td>
+                  <td>$4,971,072</td>
+                </tr>
+                <td>Sep, 2020</td>
+                <td>$21,875</td>
+                <td>$5,735</td>
+                <td>$4,994,265</td>
+              </tr>
+              <tr>
+                <td>Oct, 2020</td>
+                <td>$21,850</td>
+                <td>$5,760</td>
+                <td>$4,988,505</td>
+              </tr>
+              <tr>
+                <td>Nov, 2020</td>
+                <td>$21,825</td>
+                <td>$5,785</td>
+                <td>$4,982,719</td>
+              </tr>
+              <tr>
+                <td>Jan, 2021</td>
+                <td>$21,774</td>
+                <td>$5,836</td>
+                <td>$4,971,072</td>
+              </tr>
+              <td>Sep, 2020</td>
+              <td>$21,875</td>
+              <td>$5,735</td>
+              <td>$4,994,265</td>
+            </tr>
+            <tr>
+              <td>Oct, 2020</td>
+              <td>$21,850</td>
+              <td>$5,760</td>
+              <td>$4,988,505</td>
+            </tr>
+            <tr>
+              <td>Nov, 2020</td>
+              <td>$21,825</td>
+              <td>$5,785</td>
+              <td>$4,982,719</td>
+            </tr>
+            <tr>
+              <td>Jan, 2021</td>
+              <td>$21,774</td>
+              <td>$5,836</td>
+              <td>$4,971,072</td>
+            </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+{% endblock %}
