@@ -1,4 +1,5 @@
 # techtogether2020
+# Winner of TechTogether Boston 2020 Domain.com Contest
 
 # What is Ambient?
 As a member of a community, whether it’s a company, school, or local restaurant, you have a voice. Devices like TP-Link or Google Nest give you the autonomy to control your home temperature from your phone, but ambient allows entire communities to provide feedback on their temperature preferences. 
@@ -6,7 +7,6 @@ As a member of a community, whether it’s a company, school, or local restauran
 Ambient gives all employees and customers the right to work and spend quality time in a comfortable atmosphere. With respect to all the requests submitted, ambient will analyze and send the data to the thermostat administrator. The administrator does not have to worry what temperature to set to satisfy everyone; Ambient will do it for them. Join Ambient in helping us all ‘love the air around us’.
 
 # Quick Facts
-Contest Entries: Best Sustainability Hack, Best Environmental Action Hack, Best Data Hack, Best Social Good Hack, Wolfram Hack, Best Use of Google Cloud - Use any Google Cloud product, Best Community Hack
 Technologies Used:
 Front-End: Figma, Flask, Bootstrap, HTML/CSS, 
 Back-End: AWS DynamoDB, SQLite, 
