@@ -1,4 +1,3 @@
-# techtogether2020
 # Winner of TechTogether Boston 2020 Domain.com Contest
 
 # What is Ambient?
