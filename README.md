@@ -1,4 +1,4 @@
-# Winner of TechTogether Boston 2020 Domain.com Contest
+*Winner of TechTogether Boston 2020 Domain.com Contest
 
 # What is Ambient?
 As a member of a community, whether it’s a company, school, or local restaurant, you have a voice. Devices like TP-Link or Google Nest give you the autonomy to control your home temperature from your phone, but ambient allows entire communities to provide feedback on their temperature preferences. 
